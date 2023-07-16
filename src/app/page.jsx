@@ -1,6 +1,6 @@
 import Image from "next/image"
 import rocket from "../../public/rocket.jpg"
-import rocketn from "../../public/rocket-man.png"
+import RocketSection from "@/components/RocketSection"
 export default function Home() {
   return (
     <div className=" max-w-6xl mx-auto">
@@ -25,33 +25,12 @@ export default function Home() {
       </div>
       <hr className=" bg-white w-1/2 mx-auto sm:hidden"></hr>
 
-      <section className="p-6 my-12">
-        <h2 className=" text-4xl font-bold text-center   sm:text-5xl ">Rockets</h2>
-        <ul className=" list-none mx-auto my-12 flex flex-col sm:flex-row gap-8 items-center">
-          <li className=" border border-solid border-gray-300 items-center rounded-md flex flex-col shadow-2xl w-2/3 sm:w-5/6">
-            <Image src={rocketn} className="mx-auto w-1/2"></Image>
-            <h3 className=" text-center text-2xl font-bold p-2 ">Explore</h3>
-            <p className=" text-center text-gray-300 font-thin p-2">Into the multiverse</p>
-          </li>
-          <li className=" border border-solid border-gray-300 items-center rounded-md flex flex-col shadow-2xl w-2/3 sm:w-5/6">
-            <Image src={rocketn} className="mx-auto w-1/2"></Image>
-            <h3 className=" text-center text-2xl font-bold p-2 ">Explore</h3>
-            <p className=" text-center text-gray-300 font-thin p-2">Into the multiverse</p>
-          </li>
-          <li className=" border border-solid border-gray-300 items-center rounded-md flex flex-col shadow-2xl w-2/3 sm:w-5/6">
-            <Image src={rocketn} className="mx-auto w-1/2"></Image>
-            <h3 className=" text-center text-2xl font-bold p-2 ">Explore</h3>
-            <p className=" text-center text-gray-300 font-thin p-2">Into the multiverse</p>
-          </li>
-          <li className=" border border-solid border-gray-300 items-center rounded-md flex flex-col shadow-2xl w-2/3 sm:w-5/6">
-            <Image src={rocketn} className="mx-auto w-1/2"></Image>
-            <h3 className=" text-center text-2xl font-bold p-2 ">Explore</h3>
-            <p className=" text-center text-gray-300 font-thin p-2">Into the multiverse</p>
-          </li>
 
-        </ul>
-      </section>
-      <hr className=" bg-white w-1/2 mx-auto sm:hidden"></hr>
+      <hr className=" bg-gray-300 w-1/2 mx-auto "></hr>
+
+      <RocketSection />
+
+      <hr className=" bg-gray-300 w-1/2 mx-auto "></hr>
 
 
 
